@@ -31,17 +31,17 @@ The lab environment simulates an attacker interacting with a vulnerable AI appli
 The general data flow in the lab is as follows:
 
 ```text
-Attacker machine 
-    ↓
-Vulnerable LLM application
-    ↓
-Application logs
-    ↓
-Wazuh agent
-    ↓
-Wazuh manager
-    ↓
-Security alerts and dashboards
+User
+ ↓
+API Server
+ ↓
+Prompt Processor
+ ↓
+LLM Model
+ ↓
+Tools / RAG
+ ↓
+Logs → Wazuh
 ```
 This architecture allows the environment to replicate how a real organization might monitor AI-powered applications.
 
@@ -146,7 +146,7 @@ Example attack scenario:
 
 The repository is organized to separate infrastructure setup, attack simulations, and detection engineering components. This structure allows the lab to remain modular and easy to expand as additional attack scenarios and monitoring capabilities are added.
 
-`architecture/`
+`architecture/`  
 Contains documentation describing the overall lab design, system components, and data flow between the attacker environment, vulnerable LLM applications, and the SOC monitoring stack.
 
 `setup/`  
@@ -160,6 +160,26 @@ Contains detection rules, monitoring configurations, and analysis logic used by 
 
 `screenshots/`  
 Stores screenshots of attack demonstrations, generated alerts, log events, and monitoring dashboards used during the investigation process.
+
+## Lab Challenges
+
+The environment includes several intentionally vulnerable scenarios designed to demonstrate common LLM security issues.
+
+Challenge 1 – Prompt Injection
+Objective: Extract a hidden flag embedded in the system prompt.
+
+Challenge 2 – System Prompt Leakage
+Objective: Discover internal instructions used to configure the AI assistant.
+
+Challenge 3 – RAG Data Exfiltration
+Objective: Retrieve sensitive information stored in the vector database.
+
+Challenge 4 – Agent Tool Abuse
+Objective: Manipulate an AI agent into executing a tool that reveals a secret file.
+
+Challenge 5 – Jailbreak Attack
+Objective: Bypass model restrictions and expose hidden configuration data.
+
 
 ## Learning Outcomes
 
@@ -185,14 +205,14 @@ Several improvements are planned for the lab environment.
 - Adding automated red teaming scripts for LLM testing
 - Developing more advanced SIEM detection rules
 
-  
+
 
 ## Disclaimer
 
 This project is intended for educational and research purposes only. The vulnerable applications included in the lab are intentionally insecure and should not be deployed in production environments.
 
 
-## Articles and Blogs
+## Research and References
 - [What Is a Prompt Injection Attack? Examples & Prevention](https://www.paloaltonetworks.com/cyberpedia/what-is-a-prompt-injection-attack)
 - [Practical LLM Security Advice from the NVIDIA AI Red Team](https://developer.nvidia.com/blog/practical-llm-security-advice-from-the-nvidia-ai-red-team/)
 - [Prompt Injection Attacks on LLMs](https://www.hiddenlayer.com/research/prompt-injection-attacks-on-llms)
