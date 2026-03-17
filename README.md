@@ -192,4 +192,11 @@ Several improvements are planned for the lab environment.
 This project is intended for educational and research purposes only. The vulnerable applications included in the lab are intentionally insecure and should not be deployed in production environments.
 
 
-## Artciles and Blogs
+## Articles and Blogs
+- [What Is a Prompt Injection Attack? Examples & Prevention](https://www.paloaltonetworks.com/cyberpedia/what-is-a-prompt-injection-attack)
+- [Practical LLM Security Advice from the NVIDIA AI Red Team](https://developer.nvidia.com/blog/practical-llm-security-advice-from-the-nvidia-ai-red-team/)
+- [Prompt Injection Attacks on LLMs](https://www.hiddenlayer.com/research/prompt-injection-attacks-on-llms)
+- [Prompt Injection & the Rise of Prompt Attacks: All You Need to Know](https://www.lakera.ai/blog/guide-to-prompt-injection)
+- [AI Red Teaming: Securing Unpredictable Systems](https://www.lakera.ai/blog/ai-red-teaming)
+- [How Microsoft defends against indirect prompt injection attacks](https://www.microsoft.com/en-us/msrc/blog/2025/07/how-microsoft-defends-against-indirect-prompt-injection-attacks)
+- [Mitigating prompt injection attacks with a layered defense strategy](https://security.googleblog.com/2025/06/mitigating-prompt-injection-attacks.html)
