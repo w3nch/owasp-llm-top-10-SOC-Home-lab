@@ -146,19 +146,19 @@ Example attack scenario:
 
 The repository is organized to separate infrastructure setup, attack simulations, and detection engineering components. This structure allows the lab to remain modular and easy to expand as additional attack scenarios and monitoring capabilities are added.
 
-architecture/  
+`architecture/`
 Contains documentation describing the overall lab design, system components, and data flow between the attacker environment, vulnerable LLM applications, and the SOC monitoring stack.
 
-setup/  
+`setup/`  
 Includes step-by-step instructions for building the lab environment. This section covers server preparation, deployment of the LLM runtime, installation of vulnerable applications, and configuration of the Wazuh monitoring stack.
 
-attacks/  
+`attacks/`  
 Documents the attack scenarios demonstrated in the lab. Each entry describes the attack technique, the prompt payloads used, the vulnerable behavior observed, and the resulting system impact.
 
-detections/  
+`detections/`  
 Contains detection rules, monitoring configurations, and analysis logic used by the SIEM to identify malicious activity within the lab environment.
 
-screenshots/  
+`screenshots/`  
 Stores screenshots of attack demonstrations, generated alerts, log events, and monitoring dashboards used during the investigation process.
 
 ## Learning Outcomes
