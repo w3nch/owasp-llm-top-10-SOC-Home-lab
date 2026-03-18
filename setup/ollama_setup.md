@@ -73,6 +73,12 @@ tinyllama
 phi  
 deepseek-coder:1.3b
 ```
+## Next Steps
+- [x] Install and configure **Ollama**
+- [ ] Deploy **Open WebUI**
+- [ ] Configure the **LLM logging pipeline**
+- [ ] Create **LLM attack simulations**
+- [ ] Implement **SOC detection rules for LLM threats**
 
 ## Notes
 
@@ -81,6 +87,4 @@ Running LLMs locally allows full control over:
 • Prompt logging  
 • Response logging  
 • Attack simulation  
-• Detection engineering  
-
-This is essential for building a **LLM Security Monitoring Lab** aligned with the **OWASP Top 10 for LLM Applications**.
+• Detection engineering
