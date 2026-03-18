@@ -6,6 +6,7 @@ The server hosts the core infrastructure required for the lab environment includ
 The environment used in this guide is **Debian 13 (Trixie)** with a minimal server installation.
 
 Official Debian distribution page:
+
 ![Debian Installer](../screenshots/debian_site.png)
 ```url
 https://www.debian.org/
@@ -45,6 +46,7 @@ Using a minimal installation helps keep the system lightweight and reduces unnec
 After completing the installation, update the system packages to ensure all software is running the latest stable versions.
 
 This step prevents dependency issues later when installing additional software for the lab.
+
 ![system update](../screenshots/update_system.png)
 ```bash
 sudo apt update && sudo apt upgrade -y
