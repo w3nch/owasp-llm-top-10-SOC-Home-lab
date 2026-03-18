@@ -23,11 +23,11 @@ Models are accessed through the local Ollama API and can be interacted with thro
 Several lightweight models are used so the lab can run on systems with limited hardware resources.
 
 Example models used in this lab:
-
+```models
 tinyllama  
 phi  
 deepseek-coder:1.3b
-
+```
 These models allow testing of different types of prompts, reasoning tasks, and code generation behavior.
 
 
@@ -51,11 +51,11 @@ This lab focuses on experimenting with attack techniques described in the **OWAS
 
 Examples of attacks explored in the lab include:
 
-Prompt Injection  
-System Prompt Leakage  
-Jailbreak Attacks  
-RAG Data Exfiltration  
-Agent Tool Abuse
+- LLM01: Prompt Injection  
+- LLM02: Sensitive Information Disclosure (System Prompt Leakage)  
+- LLM05: Improper Output Handling / Jailbreak Attacks  
+- LLM06: Sensitive Information Disclosure via RAG (RAG Data Exfiltration)  
+- LLM07: Insecure Plugin Design / Agent Tool Abuse
 
 These attacks attempt to manipulate the model into ignoring safeguards, revealing hidden instructions, or generating unintended outputs.
 
