@@ -128,5 +128,6 @@ ollama list
 - [x] Install and configure **Ollama**
 - [x] Deploy **Open WebUI**
 - [ ] Configure the **LLM logging pipeline**
+- [ ] Deploy **Wazuh SIEM**  
 - [ ] Create **LLM attack simulations**
 - [ ] Implement **SOC detection rules for LLM threats**

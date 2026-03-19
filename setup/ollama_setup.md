@@ -77,6 +77,7 @@ deepseek-coder:1.3b
 - [x] Install and configure **Ollama**
 - [ ] Deploy **Open WebUI**
 - [ ] Configure the **LLM logging pipeline**
+- [ ] Deploy **Wazuh SIEM**  
 - [ ] Create **LLM attack simulations**
 - [ ] Implement **SOC detection rules for LLM threats**
 
